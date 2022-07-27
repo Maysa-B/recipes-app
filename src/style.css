@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  align-items: center;
+  background-color: #d9d375;
+  display: flex;
+  justify-content: space-around;
+}
+
+.header h1 {
+  background-color: #d9d375;
+  font-family: cursive;
+}
+
+.header img {
+  background-color: #d9d375;
+}
+
+.profile-done-btn {
+  background-color: #d5b942;
+  border: 2px solid #d5b942;
+  border-radius: 12%;
+  color: black;
+  display: flex;
+  margin: 10px;
+  padding: 18px;
+}
+
+.profile-favorite-btn {
+  background-color: #d5b942;
+  border: 2px solid #d5b942;
+  border-radius: 12%;
+  color: black;
+  display: flex;
+  margin: 10px;
+  padding: 18px;
+}
+
+.profile-logout-btn {
+  background-color: #d5b942;
+  border: 2px solid #d5b942;
+  border-radius: 12%;
+  color: black;
+  display: flex;
+  margin: 10px;
+  padding: 18px;
+}
+
+.divProfile {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.profile p {
+  display: flex;
+  font-size: 30px;
+  justify-content: center;
+  margin: 20px;
+  padding-top: 60px;
+}
+
+.footer {
+  align-self: flex-end;
+  background-color: #d9d375;
+  border: 8px solid #d9d375;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+}
+
+.footer img {
+  background-color: #d9d375;
+}
+
+.cards {
+  border-radius: 58%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 4px;
+  margin-bottom: 50px;
+}
+
+.card {
+  align-items: flex-start;
+  border-radius: 58%;
+  display: flex;
+  margin-inline: 4px;
+  margin-top: 12px;
+}
+
+.cards img {
+  max-width: 100px;
+}
+
+.cards h1 {
+  background-color: white;
+  color: black;
+  font-size: small;
+  font-weight: 700;
+  margin: 12px;
+}
+
+/* iframe {
+  max-width: 250px;
+} */
+
+.instructions {
+  width: 100vm;
+}
+
+.carouselItems {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  width: 360px;
+}
+
+.RecomendationCard {
+  margin-left: 70px;
+  text-align: center;
+  width: 180px;
+}
+
+.RecomendationCard img {
+  width: 100px;
+}
+
+/* .RecomendationCard:nth-child( 3 ) {
+  display: none;
+}
+
+.RecomendationCard:nth-child( 4 ) {
+  display: none;
+}
+
+.RecomendationCard:nth-child( 5 ) {
+  display: none;
+}
+
+.RecomendationCard:nth-child( 6 ) {
+  display: none;
+} */
+
+.finish-recipe-btn {
+  bottom: 0;
+  left: 15vh;
+  position: fixed;
+}
+
+.checkboxIngredient {
+  text-decoration: line-through;
+}
+
+.ButtonRecipe {
+  width: 100vm;
+}
+
+.btn-start-recipe {
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+}
+
+.search-top-btn {
+  border-width: 0;
+}
+
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 3px;
+}
+
+.strCategory-category-filter1 {
+  background-color: #d5b942;
+  border-radius: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5px;
+  padding-inline: 21px;
+}
+
+.strCategory-category-filter2 {
+  background-color: #d5b942;
+  border-radius: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5px;
+  padding-inline: 18px;
+}
