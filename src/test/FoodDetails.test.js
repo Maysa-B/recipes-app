@@ -4,7 +4,6 @@ import { screen } from '@testing-library/react';
 import renderWithRouter from './helpers/renderWithRouter';
 import App from '../App';
 import { burek } from './helpers/foodAPI';
-import { drinksAPI } from './helpers/drinksAPI';
 
 // https://stackoverflow.com/questions/50023902/how-can-document-execcommand-be-unit-te
 // fonte: https://stackoverflow.com/questions/11485420/how-to-mock-localstorage-in-javascript-unit-tests
@@ -101,18 +100,5 @@ describe('Testes do componente FoodDetails', () => {
     setTimeout(() => {
       expect(linkCopiedTxt).not.toBeInTheDocument();
     }, THREE_SECONDS);
-  });
-
-  it('Testa se existe os cards de recomendação', async () => {
-    jest.spyOn(global, 'fetch')
-      .mockImplementation(() => Promise.resolve({
-        json: () => Promise.resolve(drinksAPI),
-      }));
-
-    const { history } = renderWithRouter(<App />);
-    history.push('/foods/53060');
-
-    const card1 = await screen.findByTestId('0-recomendation-card');
-    expect(card1).toBeInTheDocument();
   });
 });
